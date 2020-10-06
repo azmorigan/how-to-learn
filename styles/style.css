@@ -1,26 +1,14 @@
-/*--------сброс стилей-------*/
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-
-/*----------body, миксы------*/
 .page {
   min-width: 1100px;
   max-width: 1600px;
   margin: 0 auto;
   font-family: 'Helvetica Neue', Arial, sans-serif;
-}
 
-.centered-block {
-  margin: auto;
 }
-
-/*------------header-----------*/
 
 .header {
+  padding: 0;
+  margin: 0;
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
@@ -47,12 +35,10 @@
   font-size: 102px;
   font-weight: bold;
   align-self: center;
-  position: absolute;
-  left: 64px;
-  z-index: 2;
+  padding-left: 64px;
 }
 
-.header_subtitle {
+.header__subtitle {
   width: 388px;
   line-height: 25px;
   font-size: 18px;
@@ -84,19 +70,22 @@
   right: 0;
 }
 
-/*--------decription----------*/
-
 .description {
   padding-top: 100px;
 }
 
 .two-columns {
+  padding: 0;
+  margin: 0;
   width: 80%;
   display: flex;
   justify-content: space-between;
+  margin: auto;
 }
 
 .two__columns__brief {
+  padding: 0;
+  margin: 0;
   width: 175px;
   line-height: 1.2;
   font-size: 18px;
@@ -113,13 +102,15 @@
 }
 
 .two-columns__paragraph {
+  padding: 0;
+  margin: 0;
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
   padding-bottom: 30px;
 }
 
-.two-columns__paragraph:nth-of-type(3) {
+.two-columns__paragraph:last-child {
   padding-bottom: 0;
 }
 
@@ -128,8 +119,6 @@
   font-size: 24px;
   font-weight: bold;
 }
-
-/*-----------digits-----------*/
 
 .digits {
   padding-top: 100px;
@@ -143,6 +132,7 @@
   font-weight: bold;
   text-align: center;
   padding-bottom: 20px;
+  margin: auto;
 }
 
 .section-subtitle {
@@ -151,6 +141,7 @@
   font-size: 24px;
   font-weight: normal;
   text-align: center;
+  margin: auto;
 }
 
 .table {
@@ -158,31 +149,35 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin: auto;
+  box-sizing: border-box;
 }
 
 .table__cell {
   width: 250px;
   list-style: none;
-  padding-top: 60px;
+  margin-top: 60px;
 }
 
 .table__heading {
   line-height: 1.15;
   font-size: 24px;
   font-weight: bold;
+  padding: 0;
+  margin: 0;
 }
 
 .table__text {
+  padding: 0;
+  margin: 0;
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
   padding-top: 20px;
 }
 
-/*----------feynman-----------*/
-
 .feynman {
-  height: 790px;
+  min-height: 790px;
   position: relative;
   background-color: #f2f2f2;
 }
@@ -196,6 +191,7 @@
   text-align: center;
   position: relative;
   z-index: 1;
+  margin: auto;
 }
 
 .feynman__subtitle {
@@ -206,6 +202,7 @@
   text-align: center;
   position: relative;
   z-index: 1;
+  margin: auto;
 }
 
 .feynman__link {
@@ -216,7 +213,13 @@
   top: 50%;
   right: 48px;
   text-decoration: none;
-  color: black;
+  color: #000;
+  z-index: 2;
+}
+
+.feynman__link:hover {
+  cursor: pointer;
+  color: #2f80ed;
 }
 
 .feynman__image {
@@ -226,8 +229,6 @@
   left: 0;
   bottom: 0;
 }
-
-/*-----kaufman-----*/
 
 .kaufman {
   overflow: hidden;
@@ -243,7 +244,6 @@
 
 .section-subtitle_theme_dark {
   color: #eee;
-  margin-top: 20px;
 }
 
 .table_theme_dark {
@@ -269,20 +269,20 @@
   z-index: -1;
 }
 
-/*------footer------*/
-
 .footer {
   min-height: 350px;
   background-color: #1f1f1f;
   padding-top: 60px;
   padding-bottom: 40px;
+  box-sizing: border-box;
 }
 
 .footer__columns {
   width: 90%;
   display: flex;
   justify-content: space-between;
-  height: 250px;
+  min-height: 250px;
+  margin: auto;
 }
 
 .footer__column_content_copyright {
@@ -297,6 +297,8 @@
   height: 35px;
 }
 .footer__author {
+  padding: 0;
+  margin: 0;
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
@@ -305,6 +307,8 @@
 }
 
 .footer__column-heading {
+  padding: 0;
+  margin: 0;
   line-height: 30px;
   font-size: 18px;
   font-weight: bold;
@@ -313,6 +317,8 @@
 }
 
 .footer__column-links {
+  padding: 0;
+  margin: 0;
   line-height: 30px;
   font-size: 18px;
   font-weight: normal;
@@ -321,13 +327,15 @@
   padding-bottom: 16px;
 }
 
-.list-link {
+.footer__column-link {
   text-decoration: none;
   color: #eee;
 }
+
+.footer__column-link:hover {
+  color: #2f80ed;
+}
+
 .footer__social-icon {
   padding-right: 10px;
 }
-
-
-
