@@ -36,6 +36,7 @@
   font-weight: bold;
   align-self: center;
   padding-left: 64px;
+  z-index: 2;
 }
 
 .header__subtitle {
@@ -149,6 +150,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   margin: auto;
+  padding: 0;
   box-sizing: border-box;
 }
 
