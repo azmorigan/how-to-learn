@@ -187,10 +187,9 @@
 }
 
 .video {
-  margin: 0 auto;
   padding-top: 100px;
   position: relative;
-  height: 800px;
+  min-height: 440px;
 }
 
 .video__set {
@@ -206,6 +205,10 @@
   margin-left: -525px;
 }
 
+.oakley {
+  padding-top: 160px;
+  background-color: #f2f2f2;
+}
 
 .digits {
   padding-top: 100px;
@@ -263,6 +266,7 @@
 }
 
 .feynman {
+  padding-top: 80px;
   min-height: 790px;
   position: relative;
   background-color: #f2f2f2;
@@ -273,7 +277,7 @@
   line-height: 1.15;
   font-size: 120px;
   font-weight: bold;
-  padding-top: 100px 0 0 0;
+  padding: 0;
   text-align: center;
   position: relative;
   z-index: 1;
