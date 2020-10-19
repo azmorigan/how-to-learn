@@ -66,7 +66,15 @@
 
 .header__link {
   color: #2f80ed;
+  text-decoration: none;
+  opacity: 1;
+  transition: opacity .3s;
 }
+
+.header__link:hover {
+  opacity: .3;
+}
+
 .header__main-illustration {
   width: 765px;
   height: 608px;
@@ -253,11 +261,14 @@
   text-decoration: none;
   color: #000;
   z-index: 2;
+  opacity: 1;
+  transition: opacity .3s;
 }
 
 .feynman__link:hover {
   cursor: pointer;
-  color: #2f80ed;
+  color: #000;
+  opacity: .3;
 }
 
 .feynman__image {
@@ -378,6 +389,10 @@
   margin: 10px 0 68px 0;
 }
 
+.khan__book-container {
+  display: flex;
+}
+
 .khan__book-pic {
   padding: 0;
   margin: 0;
@@ -388,16 +403,20 @@
 }
 
 .khan__buy-link {
-  /*В макете, скорее всего, имелось в виду использование flex для .khan__book-container, но тогда пространство снизу блока .khan__buy-link тоже будет ссылкой. Поэтому использовал inline. Или есть другие варианты?*/
-  display: inline;
   padding: 0;
-  margin: 0 0 0 48px;
+  margin-left: 48px;
   line-height: 42px;
   font-size: 30px;
   font-weight: normal;
   text-decoration: none;
   color: #2f80ed;
   vertical-align: top;
+  transition: opacity .3s;
+  opacity: 1;
+}
+
+.khan__buy-link:hover {
+  opacity: .3;
 }
 
 .kaufman {
@@ -448,7 +467,7 @@
   width: 1100px;
   margin-top: 80px;
   display: flex;
-  justify-content: center;
+  justify-content: center ;
 }
 
 .logo-zone {
@@ -517,10 +536,13 @@
 .footer__column-link {
   text-decoration: none;
   color: #eee;
+  opacity: 1;
+  transition: opacity .3s;
 }
 
 .footer__column-link:hover {
   color: #2f80ed;
+  opacity: .3;
 }
 
 .footer__social-icon {
