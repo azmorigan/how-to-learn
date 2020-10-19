@@ -198,16 +198,74 @@
   display: flex;
   justify-content: space-between;
   position: absolute;
-  /*273px сверху от начала блока video = 100px(padding-top) + 89px(section-style)+ 34px(section-subtitle) + 50px(отступ от video__set)*/
+  /*273px(сверху от начала блока video) = 100px(padding-top) + 89px(section-style) + 34px(section-subtitle) + 50px(отступ от video__set)*/
   top: 273px;
   /*центрирование по горизонтали*/
   left: 50%;
   margin-left: -525px;
 }
 
+.video__item {
+  border: 0;
+}
 .oakley {
   padding-top: 160px;
   background-color: #f2f2f2;
+}
+
+.feynman {
+  padding-top: 80px;
+  min-height: 790px;
+  position: relative;
+  background-color: #f2f2f2;
+}
+
+.feynman__title {
+  width: 648px;
+  line-height: 1.15;
+  font-size: 120px;
+  font-weight: bold;
+  padding: 0;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  margin: auto;
+}
+
+.feynman__subtitle {
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+  padding: 70px 0 0 0;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  margin: auto;
+}
+
+.feynman__link {
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+  position: absolute;
+  top: 50%;
+  right: 48px;
+  text-decoration: none;
+  color: #000;
+  z-index: 2;
+}
+
+.feynman__link:hover {
+  cursor: pointer;
+  color: #2f80ed;
+}
+
+.feynman__image {
+  width: 867px;
+  height: 637px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
 
 .digits {
@@ -265,59 +323,81 @@
   font-weight: normal;
 }
 
-.feynman {
-  padding-top: 80px;
-  min-height: 790px;
-  position: relative;
+.khan {
   background-color: #f2f2f2;
 }
 
-.feynman__title {
-  width: 648px;
+.khan__container {
+  width: 80%;
+  margin: auto;
+  padding: 105px 0 0 0;
+}
+
+.khan__author {
+  line-height: 42px;
+  font-size: 30px;
+  font-weight: normal;
+  padding: 0;
+  margin: 0;
+}
+
+.khan__title {
   line-height: 1.15;
-  font-size: 120px;
+  font-size: 60px;
   font-weight: bold;
   padding: 0;
-  text-align: center;
-  position: relative;
-  z-index: 1;
-  margin: auto;
+  margin: 0;
 }
 
-.feynman__subtitle {
-  line-height: 51px;
-  font-size: 36px;
+.khan__quote {
+  width: 790px;
+  line-height: 34px;
+  font-size: 24px;
   font-weight: normal;
-  padding-top: 70px;
-  text-align: center;
-  position: relative;
-  z-index: 1;
-  margin: auto;
+  padding: 0;
+  margin: 50px 0 36px 0;
 }
 
-.feynman__link {
-  line-height: 51px;
-  font-size: 36px;
+.khan__quote-author {
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 0;
+  margin: 0;
+}
+
+.khan__book-container {
+  padding: 0;
+  margin: 0;
+}
+.khan__quote-author-subline {
+  line-height: 1.15;
+  font-size: 24px;
   font-weight: normal;
-  position: absolute;
-  top: 50%;
-  right: 48px;
+  padding: 0;
+  margin: 10px 0 68px 0;
+}
+
+.khan__book-pic {
+  padding: 0;
+  margin: 0;
+  width: 620px;
+  height: 608px;
+  object-fit: cover;
+  object-position: top center;
+}
+
+.khan__buy-link {
+  /*В макете, скорее всего, имелось в виду использование flex для .khan__book-container, но тогда пространство снизу блока .khan__buy-link тоже будет ссылкой. Поэтому использовал inline. Или есть другие варианты?*/
+  display: inline;
+  padding: 0;
+  margin: 0 0 0 48px;
+  line-height: 42px;
+  font-size: 30px;
+  font-weight: normal;
   text-decoration: none;
-  color: #000;
-  z-index: 2;
-}
-
-.feynman__link:hover {
-  cursor: pointer;
   color: #2f80ed;
-}
-
-.feynman__image {
-  width: 867px;
-  height: 637px;
-  position: absolute;
-  left: 0;
-  bottom: 0;
+  vertical-align: top;
 }
 
 .kaufman {
