@@ -134,6 +134,79 @@
   font-weight: bold;
 }
 
+.techniques {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 100px;
+}
+
+.cards {
+  width: 920px;
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+  margin: auto;
+  padding: 0;
+}
+
+.cards__item {
+  width: 240px;
+  margin: 0;
+  padding: 60px 100px 0 0;
+  list-style: none;
+}
+
+/* 3n - на случай добавления карточек*/
+.cards__item:nth-child(3n) {
+  padding-right: 0;
+}
+
+.cards__image {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  margin: 0 40px;
+}
+
+.cards__title {
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  padding: 0;
+  margin: 43px 0 0 0;
+}
+
+.cards__description {
+  line-height: 23px;
+  font-size: 18px;
+  font-weight: normal;
+  text-align: center;
+  padding: 0;
+  margin: 16px 5px 0;
+}
+
+.video {
+  margin: 0 auto;
+  padding-top: 100px;
+  position: relative;
+  height: 800px;
+}
+
+.video__set {
+  width: 1050px;
+  height: 316px;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  /*273px сверху от начала блока video = 100px(padding-top) + 89px(section-style)+ 34px(section-subtitle) + 50px(отступ от video__set)*/
+  top: 273px;
+  /*центрирование по горизонтали*/
+  left: 50%;
+  margin-left: -525px;
+}
+
+
 .digits {
   padding-top: 100px;
   padding-bottom: 100px;
@@ -165,7 +238,6 @@
   justify-content: space-between;
   margin: auto;
   padding: 0;
-  box-sizing: border-box;
 }
 
 .table__cell {
@@ -183,12 +255,11 @@
 }
 
 .table__text {
-  padding: 0;
+  padding: 20px 0 0 0;
   margin: 0;
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
-  padding-top: 20px;
 }
 
 .feynman {
@@ -202,7 +273,7 @@
   line-height: 1.15;
   font-size: 120px;
   font-weight: bold;
-  padding-top: 100px;
+  padding-top: 100px 0 0 0;
   text-align: center;
   position: relative;
   z-index: 1;
