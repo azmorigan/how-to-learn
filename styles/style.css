@@ -439,6 +439,24 @@
   z-index: -1;
 }
 
+.resources {
+  padding: 100px 0 217px;
+}
+
+.resources__logo-zone {
+  margin: auto;
+  width: 1100px;
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+}
+
+.logo-zone {
+  width: 270px;
+  height: 38px;
+  border: 0;
+}
+
 .footer {
   min-height: 350px;
   background-color: #1f1f1f;
