@@ -9,6 +9,7 @@
   vertical-align: top;
   transition: opacity .3s;
   opacity: 1;
+  align-self: start;
 }
 
 .khan__buy-link:hover {
